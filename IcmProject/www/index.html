@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <title>Icm Calculator</title>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header" style="background-color: #B0E0E6">
+                <h1>IMC Calculator</h1>
+            </div>
+            <div data-role="content"  style="background-color: #FF5733">
+                <form>
+                    <label for="taille">Taille</label>
+                    <input type="number" id="taille"   ><br>
+                    <label for="poids">Poids</label>
+                    <input type="number" id="poids"><br>
+                    <input type="button" value="Calculator" onclick="calculerImc()">
+                </form>
+                <div id="diagnostic"> </div>
+            </div>
+             <div data-role="footer" data-position="fixed" style="background-color: #B0E0E6" >
+                <h1>Master2 Esp &copy; Mars 2021</h1>
+                
+            </div>
+       </div>
+        
+    </body>
+</html>

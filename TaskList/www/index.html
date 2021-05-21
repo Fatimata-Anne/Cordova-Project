@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content= "IE=edge">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+        <!-- <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+         -->
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/app.js"></script>
+        <title>Task List</title>
+    </head>
+    <body>
+       <div data-role="page">
+            <div data-role="header">
+                <h1>Todo List App</h1>
+            </div>
+            <div data-role="content">
+                <form>
+                    <input type="text" id="task" placeholder="Ajouter une tache">
+                    <input type="button" value="Ajouter"  onclick="addTask()">
+
+                </form>
+                <ul id="taskList" data-role="listview" data-inset="true">
+                    <li>Apprendre</li>
+                    <li class="task-done">Nager</li>
+                    <li>Cuisiner le dinner</li>
+                </ul>
+         
+            </div>  
+            <div data-role="footer" data-position="fixed">
+                <h1>Master2 Esp &copy; Mars 2021</h1>
+                
+            </div>
+       </div>
+          
+    </body>
+</html>
